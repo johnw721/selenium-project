@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import.org.openqa.selenium.WebElement;
 
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 
     @CacheLookup
     @FindBy(id = "username")
@@ -22,7 +22,20 @@ public class LoginPage {
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
+        super(driver);
 
         PageFactory.initElements(driver, this);
+
+        }
+
+    public void login(String username, String password){
+
+        elementControl.setText(userId, username);
+
+        elementControl.setText(userPassword, password);
+
+        elementControl.clickElement(loginButton);
+
+    }
 
 }
