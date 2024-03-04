@@ -11,11 +11,13 @@ public class AppTest {
      * This is where the test is executed. The @BeforeClass annotation ensures that this test is executed
      * 
      */
-    @BeforeClass
+    @BeforeEach
     @DisplayName("Test")
 
     @Test
 
-    @AfterClass
+    @AfterEach
+
+    @AfterAll
     
 }
