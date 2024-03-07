@@ -9,9 +9,11 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Grey\\Documents\\Software_Projects\\selenium project\\demo\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.open(args);
+        // Navigates to the URL specified
+        driver.get();
         String title = driver.getTitle();
 
+        // Closes the browser window and stops the webdriver
         driver.stop();
 
         System.out.println("Hello world!");
