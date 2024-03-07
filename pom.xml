@@ -18,9 +18,9 @@
     </dependency>
 
     <dependency>
-      <groupId>Selenium</groupId>
-      <artifactId>Selenium:selenium-java:jar:4.2.3</artifactId>
-      <version>4.2.3</version>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.4.0</version>
     </dependency>
   
     <!-- Specify the Java -->
@@ -28,11 +28,11 @@
     <sourceDirectory>.</sourceDirectory>
     <plugins>
             <plugin> 
-              <version>4.2.3</version>
               <groupId>org.apache.maven.plugins</groupId>  
               <artifactId>
                 org/apache/maven/plugins/maven-compiler-plugin
               </artifactId>
+              <version>4.2.3</version>
             </plugin>
     </plugins>
     </build>
