@@ -10,11 +10,12 @@ public class Main {
         WebDriver driver = new ChromeDriver();
 
         // Navigates to the URL specified
-        driver.get();
+        driver.get(null);
         String title = driver.getTitle();
 
         // Closes the browser window and stops the webdriver
-        driver.stop();
+        driver.close();
+        driver.quit();
 
         System.out.println("Hello world!");
     }
