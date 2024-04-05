@@ -60,9 +60,7 @@
         <artifactId>cucumber-testng</artifactId>
         <version>7.15.0</version>
     </dependency>
-
-  <dependency>
-  
+</dependencies>
     <!-- Specify the Java -->
     <build>
     <sourceDirectory>.</sourceDirectory>
@@ -76,7 +74,6 @@
             </plugin>
     </plugins>
     </build>
-</dependencies>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -84,7 +81,7 @@
     </properties>
     <plugin>
     <!-- Build an executable JAR -->
-<groupId>org.apache.maven.plugins</groupId>
+    <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jar-plugin</artifactId>
           <version>3.1.0</version>
       <configuration>
@@ -96,5 +93,5 @@
           </manifest>
         </archive>
       </configuration>
-</plugin>
+  </plugin>
 </project>
